@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,17 @@
 
 <body>
     <script>
+        const LÆNGDE = 10;
+        const BREDDE = 10;
+        const AREAL = LÆNGDE * BREDDE;
+        if (AREAL < 100) {
+            console.log("Arealet er for lille")
+        } else if (AREAL >= 100 || AREAL <= 200) {
+            console.log("Arealet er passende")
+        } else if (AREAL >= 200) {
+            console.log("Arealet er for stort")
+        }
     </script>
 </body>
+
 </html>
