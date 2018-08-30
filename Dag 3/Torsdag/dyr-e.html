@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyr</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <div class="dyr">
+
+        <script>
+            let dyr = [{
+                    "navn": "elefant",
+                    "type": "pattedyr",
+                    "levested": "Indien",
+                    "billede": "Elefant.jpeg"
+                },
+                {
+                    "navn": "sild",
+                    "type": "fisk",
+                    "levested": "Nordsøen",
+                    "billede": "Sild.png"
+                },
+                {
+                    "navn": "krokodille",
+                    "type": "krybdyr",
+                    "levested": "Nilen",
+                    "billede": "krokodille.jpg"
+                }
+            ];
+            document.addEventListener("DOMContentLoaded", start);
+
+            function start() {
+                dyr.forEach(animal => {
+                    document.querySelector(".dyr").innerHTML +=
+                        "<img src='" + animal.billede + "' alt=''> " +
+                        animal.navn + ": " +
+                        animal.type + " fra " +
+                        animal.levested + "<br> ";
+                })
+            }
+        </script>
+</body>
+
+</html>
