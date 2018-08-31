@@ -9,14 +9,26 @@
 
 <style>
     img {
-        width: 30vw;
+        width: 50%;
+    }
+
+    .dyr {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    @media screen and (min-width: 480px) {
+        .dyr {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 </style>
 
 <body>
     <div class="dyr"></div>
     <template class="dyretemplate">
-        <div class="dyr">
+        <div>
             <h2></h2>
             <ul>
                 <li class="type-data"></li>
